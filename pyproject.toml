@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "resumeai"
+version = "0.1.0"
+description = "AI-powered Python package that generates concise summaries of videocasts using speech recognition and NLP."
+authors = ["Camilla Akemi Noba"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pytubefix = "^8.6.0"
+openai = "^1.55.2"
+speechrecognition = "^3.11.0"
+pydub = "^0.25.1"
+ffmpeg = "^1.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
