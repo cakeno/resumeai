@@ -13,6 +13,10 @@ openai = "^1.55.2"
 speechrecognition = "^3.11.0"
 pydub = "^0.25.1"
 ffmpeg = "^1.4"
+llvmlite = "^0.43.0"
+numba = "^0.60.0"
+openai-whisper = "^20240930"
+torchaudio = "^2.5.1"
 
 
 [build-system]

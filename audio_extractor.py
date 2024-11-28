@@ -1,5 +1,8 @@
 from pytubefix import YouTube
 from pytubefix.cli import on_progress
+import whisper
+
+model = whisper.load_model("base")
 
 base_dir = f"audios"
 video_url= "https://www.youtube.com/watch?v=LgVpUDtk9fc"
@@ -11,3 +14,6 @@ stream_url = yt.streams.get_audio_only()
 stream_url.download()
 
 audio_path = f"{base_dir}/{yt.title}"
+
+transcription = model.transcribe(f"{yt.title}.m4a")
+print(transcription["text"])
